@@ -1,7 +1,7 @@
 package co.edu.unipiloto.simulacion.tarea.colas;
 
 public class Client {
-	private int arrivalTime, initServiceTime, serviceTime, enquedTime, departureTime;
+	private int arrivalTime, initServiceTime, serviceTime, enquedTime, departureTime,baseArrivalTime,systemTime;
 
 	public int getArrivalTime() {
 		return arrivalTime;
@@ -42,6 +42,22 @@ public class Client {
 	public void setDepartureTime(int departureTime) {
 		this.departureTime = departureTime;
 	}
-	
+
+	public int getBaseArrivalTime() {
+		return baseArrivalTime;
+	}
+
+	public void setBaseArrivalTime(int baseArrivalTime) {
+		this.baseArrivalTime = baseArrivalTime;
+	}
+
+	public int getSystemTime() {
+		return systemTime;
+	}
+
+	public void setSystemTime(int sistemTime) {
+		this.systemTime = sistemTime;
+	}
+
 	
 }
