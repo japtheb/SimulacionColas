@@ -92,7 +92,8 @@ public class Server {
 						+ " %", "\nTiempo promedio entre arribos: "
 						+ averageBetweenArrivalsTime,
 				"\nTiempo promedio de un cliente en el sistema: "
-						+ averageClientSystem));
+						+ averageClientSystem));	
+		
 
 	}
 }

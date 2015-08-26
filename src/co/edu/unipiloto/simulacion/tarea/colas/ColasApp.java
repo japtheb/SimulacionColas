@@ -1,12 +1,17 @@
 package co.edu.unipiloto.simulacion.tarea.colas;
 
+import javax.swing.JOptionPane;
+
 public class ColasApp {
 
-	private static final int PROBABILITY_CHANNEL = 8;
-	private static final int PROBABILITY_SERVER = 6;
-	private static final int SERVICE_TIME = 100;
-
 	public static void main(String[] args) {
+		int PROBABILITY_CHANNEL = Integer.parseInt(JOptionPane
+				.showInputDialog("Probabilidad canal"));
+		int PROBABILITY_SERVER = Integer.parseInt(JOptionPane
+				.showInputDialog("Probabilidad servidor"));
+		int SERVICE_TIME = Integer.parseInt(JOptionPane
+				.showInputDialog("Tiempo de servicio"));
+
 		TimeArrivalProbabilityTable timeArrivalProbabilityTableChannel = new TimeArrivalProbabilityTable(
 				PROBABILITY_CHANNEL);
 		TimeArrivalProbabilityTable timeArrivalProbabilityTableServer = new TimeArrivalProbabilityTable(

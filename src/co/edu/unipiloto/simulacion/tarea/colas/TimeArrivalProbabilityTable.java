@@ -8,12 +8,15 @@ public class TimeArrivalProbabilityTable {
 
 	private Random randomGenerator;
 
-	public TimeArrivalProbabilityTable(int maxTime) {
-		this.maxTime = maxTime - 1;
+	public TimeArrivalProbabilityTable(double PROBABILITY_CHANNEL) {
+		this.maxTime = (int) (PROBABILITY_CHANNEL - 1);
 		this.randomGenerator = new Random();
 	}
 
 	public int getRandomTime() {
+		if (maxTime == 0) {
+			return 1;
+		}
 		return randomGenerator.nextInt(maxTime) + 1;
 	}
 
